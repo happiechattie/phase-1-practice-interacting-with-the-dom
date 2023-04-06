@@ -74,6 +74,7 @@ document.getElementById('comment-form').addEventListener('submit', (e) => {
     let comment = document.createElement('p');
     comment.innerText = document.getElementById('comment-input').value;
     document.getElementById('list').append(comment);
+    e.target.reset();
 })
 
 keepTime();
